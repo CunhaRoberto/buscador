@@ -1,0 +1,127 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient( #121212, #212b46)  ;
+    
+
+}
+.container2{
+    
+    height: auto;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;    
+    background-color: transparent;
+}
+
+
+.title{
+    font-size: 85px;
+    color: #fff;
+    animation: flipTitle 5s;
+}
+
+@keyframes flipTitle{
+    from {
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+.containerInput{
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgb(0, 0, 0, 0.5);
+}
+
+.containerInput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+    margin-right: 8px;    
+}
+
+.containerInput ::placeholder{
+    color: #F1f1f1;
+
+}
+
+
+.containerSelect{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #000;
+    outline: none;
+    margin-right: 8px;
+    width: 850px; /* Aumenta a largura do select */
+}
+
+.containerInput select{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #000;
+    outline: none;
+    margin-right: 8px;  
+    
+}
+
+.containerSelect ::placeholder{
+    color: #000;
+
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.2) ;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 500px; 
+    border-radius: 8px;
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 39px;
+
+}
+
+.main span{
+    margin-bottom: 16px;
+    font-weight: bold;
+
+}
+
+@media(max-width: 620px){
+    .title{
+        font-size: 65px;
+    }
+
+}
